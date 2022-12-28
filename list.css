@@ -1,12 +1,6 @@
-.list__item {
-    list-style: none;
-    font-family: 'EB Garamond', serif;
-    font-size: 20px;
-}
 
 .list__item--done {
     text-decoration: line-through;
-    
 }
 
 .tasks {
@@ -15,9 +9,30 @@
 }
 
 .list__item {
+    list-style: none;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
     display: grid;
     grid-template-columns: auto 1fr auto;
     gap: 10px;
     align-items: center;
     padding: 10px;
+    border-bottom: 1px solid rgb(185, 167, 167);
+}
+
+.task__button {
+    border: none;
+    color: black;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background: white;
+}
+
+.task__button:hover {
+    background: rgb(175, 147, 170);
+}
+
+.task__button:active {
+    background: rgb(175, 147, 120);
 }
