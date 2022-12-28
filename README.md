@@ -9,12 +9,12 @@ For more information you can write to me by clicking the link at the bottom of t
 ![](https://github.com/saneckaA/to-do-list/blob/main/images/Animation-todolist.gif?raw=true)
 
 ## Technologies used in this project:
--HTML
--CSS
--JavaScript
--BEM
--Grid
--Flex
+- HTML
+- CSS
+- JavaScript
+- BEM
+- Grid
+- Flex
 
 ## You can check it out in here:
 https://saneckaa.github.io/to-do-list/
