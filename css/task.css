@@ -24,8 +24,10 @@
     color: black;
     width: 30px;
     height: 30px;
+    border-radius: 50%;
     padding: 0;
     background: white;
+    transition: 1s;
 }
 
 .task__button:hover {

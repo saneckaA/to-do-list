@@ -1,5 +1,5 @@
 {
-    const tasks =[];
+    let tasks =[];
     
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -34,7 +34,7 @@
         });
     };
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -45,20 +45,28 @@
             ${task.content}</span>
             <button class="task__button js-remove">🗑</button>
             </li>
-
             `;
         };
         document.querySelector(".js-tasks").innerHTML = htmlString;
+    };
 
+    const renderButtons = () => {
+
+    };
+
+    const bindButtonsEvents = () => {
+
+    }; /*funkcja na event listenery do nowych przyciksów */
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
         bindEvents();
     };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-
-
-        
         const newTaskElement = document.querySelector(".js-newTask");
         const newTaskContent = newTaskElement.value.trim();
 
@@ -69,8 +77,6 @@
         newTaskElement.focus ()
 
     };
-
-   
 
     const init = () => {
         render();
