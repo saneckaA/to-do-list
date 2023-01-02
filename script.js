@@ -34,7 +34,7 @@
         });
     };
 
-    const renderTasks = () => {
+    const render = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -48,19 +48,7 @@
             `;
         };
         document.querySelector(".js-tasks").innerHTML = htmlString;
-    };
 
-    const renderButtons = () => {
-
-    };
-
-    const bindButtonsEvents = () => {
-
-    }; /*funkcja na event listenery do nowych przyciksów */
-
-    const render = () => {
-        renderTasks();
-        renderButtons();
         bindEvents();
     };
 
